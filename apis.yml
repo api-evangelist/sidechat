@@ -1,7 +1,27 @@
 aid: sidechat
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sidechat.png
 name: Sidechat
-description: Sidechat is a company surfaced as a portfolio company of canaan-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sidechat is an anonymous, campus-based social networking app for college
+  students, built by Flower Ave Inc in New York City and backed by Canaan
+  Partners. Students verify with a school email to join their college's private,
+  location- and campus-scoped community where they post text, images, and polls,
+  vote, and chat anonymously in a Reddit-like feed. Sidechat launched in early
+  2022, acquired Yik Yak in 2023, and operates primarily as an iOS consumer app.
+  It publishes no official public API, developer portal, SDK, or OpenAPI surface;
+  this profile captures the company's public web presence and identity for the
+  API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/sidechat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Social
+- Anonymous
+- Community
+- Messaging
+- Consumer
+- Higher Education
+- Mobile
 apis: []
+common:
+- type: DomainSecurity
+  url: security/sidechat-domain-security.yml
+- type: Website
+  url: https://sidechat.lol/
+- type: Support
+  url: https://yikyak.zendesk.com/hc/en-us
+- type: TermsOfService
+  url: https://sidechat.notion.site/Sidechat-Terms-of-Use-d2f718ddad2f403b85bba67078fbdf18
+- type: PrivacyPolicy
+  url: https://sidechat.notion.site/Sidechat-Privacy-Policy-df1a4470e1984a74a38bc3dd7630245e
+- type: SignUp
+  url: https://apps.apple.com/us/app/sidechat/id1591988276
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
